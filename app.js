@@ -133,7 +133,7 @@
       '<dl class="rv" data-rv="up" data-delay="460" style="display:flex;flex-wrap:wrap;gap:0 clamp(1.2rem,2.5vw,2rem);margin:2.4rem 0 0">' + meta + '</dl>' +
     '</div>';
     return '<section id="top" style="position:relative;overflow:hidden">' +
-      '<span aria-hidden="true" style="position:absolute;inset-inline-start:-12%;top:-10%;width:55%;height:90%;background:radial-gradient(circle at 40% 40%,rgba(229,165,44,.18),transparent 62%);pointer-events:none"></span>' +
+      '<span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 60% at 50% 28%, rgba(229,165,44,.15), transparent 72%)"></span>' +
       '<div class="tks-hero-grid" style="position:relative;max-width:1320px;margin:0 auto;padding:clamp(2rem,5vw,4.5rem) clamp(1.25rem,4vw,4rem) clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;min-height:min(86vh,760px)">' + text + photo + '</div>' +
       '<div aria-hidden="true" class="tks-zig-band"></div>' +
     '</section>';
@@ -141,11 +141,25 @@
 
   function seal(t, lang) {
     var ar = lang === "ar";
-    var ring = ar ? "البير · البئر · الوطن القبلي · " : "EL BIR · LE PUITS · CAP BON · ";
+    var ringSvg;
+    if (ar) {
+      // Arabic cursive can't shape along an SVG <textPath> (RTL-on-path bug) →
+      // an Amazigh struck-seal frieze instead (ⵣ + diamonds) that rotates the same.
+      var items = "";
+      for (var i = 0; i < 12; i++) {
+        var a = i * 30;
+        if (i % 2 === 0) items += '<text x="150" y="39" text-anchor="middle" transform="rotate(' + a + ' 150 150)" style="font-family:\'Noto Sans Tifinagh\',sans-serif;font-size:17px" fill="rgba(244,205,114,.92)">ⵣ</text>';
+        else items += '<rect x="146.6" y="33.4" width="6" height="6" transform="rotate(' + a + ' 150 150) rotate(45 149.6 36.4)" fill="rgba(244,205,114,.8)"/>';
+      }
+      ringSvg = '<svg viewBox="0 0 300 300" class="tks-seal-ring" style="position:absolute;inset:0;width:100%;height:100%">' + items + '</svg>';
+    } else {
+      var ring = "EL BIR · LE PUITS · CAP BON · ";
+      ringSvg = '<svg viewBox="0 0 300 300" class="tks-seal-ring" style="position:absolute;inset:0;width:100%;height:100%"><defs><path id="tks-sp" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"></path></defs>' +
+        '<text fill="rgba(244,205,114,.9)" style="font-family:var(--ui-font);font-size:15px;font-weight:600;letter-spacing:2px"><textPath href="#tks-sp" startOffset="0">' + ring + ring + '</textPath></text></svg>';
+    }
     return '<div class="rv" data-rv="blur" style="display:flex;justify-content:center;order:' + (ar ? 2 : 1) + '">' +
       '<div style="position:relative;width:min(72vw,300px);aspect-ratio:1/1">' +
-        '<svg viewBox="0 0 300 300" class="tks-seal-ring" style="position:absolute;inset:0;width:100%;height:100%"><defs><path id="tks-sp" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"></path></defs>' +
-        '<text fill="rgba(244,205,114,.9)" style="font-family:' + (ar ? "var(--font-display-ar)" : "var(--ui-font)") + ';font-size:' + (ar ? "16px" : "15px") + ';font-weight:600;letter-spacing:' + (ar ? "1px" : "2px") + '"><textPath href="#tks-sp" startOffset="0">' + ring + ring + '</textPath></text></svg>' +
+        ringSvg +
         '<span aria-hidden="true" style="position:absolute;inset:14%;border-radius:50%;border:1.5px solid rgba(229,165,44,.5)"></span>' +
         '<span aria-hidden="true" style="position:absolute;inset:18%;border-radius:50%;border:1px dashed rgba(229,165,44,.35)"></span>' +
         '<div style="position:absolute;inset:14%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 8%">' +
@@ -331,5 +345,5 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", function () { render("fr"); });
+  document.addEventListener("DOMContentLoaded", function () { render("ar"); });
 })();
