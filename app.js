@@ -106,7 +106,7 @@
     // Trait rouge (swoosh) FR ET AR — parité (choix PO 2026-06-24, edit build local revertible).
     // AR : offset un peu plus bas pour passer sous les jambages arabes sans manger les lettres.
     var word = '<span style="color:var(--pear-700)">' + t.hero_title_b + '</span>' +
-        '<svg viewBox="0 0 240 14" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;inset-inline-start:0;bottom:' + (ar ? "-.30em" : "-.18em") + ';width:100%;height:.32em;overflow:visible"><path d="M2 9 C 60 3, 180 3, 238 8" fill="none" stroke="var(--clay-500)" stroke-width="3.5" stroke-linecap="round"/></svg>';
+        '<svg viewBox="0 0 240 14" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;inset-inline-start:0;bottom:' + (ar ? "-.25em" : "-.18em") + ';width:100%;height:.32em;overflow:visible"><path d="M2 9 C 60 3, 180 3, 238 8" fill="none" stroke="var(--clay-500)" stroke-width="3.5" stroke-linecap="round"/></svg>';
     var meta = t.hero_meta.map(function (m, i) {
       return '<div style="display:flex;flex-direction:column;gap:.15rem;' + (i ? "padding-inline-start:clamp(1.2rem,2.5vw,2rem);border-inline-start:1px solid var(--border-default)" : "") + '">' +
         '<dt style="font-family:var(--ui-font);font-size:.68rem;font-weight:600;letter-spacing:' + (ar ? "0" : ".12em") + ';text-transform:' + (ar ? "none" : "uppercase") + ';color:var(--text-muted)">' + m.l + '</dt>' +
