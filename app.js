@@ -5,7 +5,7 @@
 
   var CONTACT = {
     facebook: "https://www.facebook.com/ridha.dakhlaoui.77",
-    phone1: "+21620039234", phone1_h: "(+216) 20 039 234", phone2_h: "(+216) 20 523 262",
+    phone1: "+21620039234", phone1_h: "(+216) 20 039 234", phone2: "+21620523262", phone2_h: "(+216) 20 523 262",
     whatsapp: "https://wa.me/21620039234",
     maps: "https://www.google.com/maps?q=36.78711,10.67108",
     coords: "36°47′13.6″N · 10°40′15.9″E",
@@ -15,13 +15,14 @@
   var COPY = {
     fr: {
       dir: "ltr",
-      nav: ["Le domaine", "El Bir", "Le fruit", "Contact"], cta_contact: "Contacter",
-      hero_eyebrow: "Été 2026 · Cap Bon", hero_title_a: "Nos poiriers", hero_title_b: "Williams", hero_title_c: "du Cap Bon.",
-      hero_lede: "Vergers sains, en pleine production. Une invitation, simplement : venez les voir.",
-      hero_cta1: "Parler récolte", hero_cta2: "Découvrir le domaine",
-      hero_meta: [{ l: "Variété", v: "Williams" }, { l: "Terroir", v: "Cap Bon" }, { l: "Saison", v: "Été 2026" }],
+      nav: ["Le domaine", "El Bir", "Le fruit", "Contact"], cta_contact: "Appeler",
+      hero_eyebrow: "Récolte été 2026 · Cap Bon", hero_title_a: "Poires", hero_title_b: "Williams", hero_title_c: "de Takelsa.",
+      hero_lede: "Vergers sains, au Cap Bon. Commandez en direct, du producteur.",
+      hero_cta_call: "Commander", hero_call_eyebrow: "Pour commander, appelez directement le responsable",
+      hero_meta: [{ l: "Variété", v: "Williams" }, { l: "Terroir", v: "Cap Bon" }, { l: "Récolte", v: "Été 2026" }],
       hero_place: "Bir Ezzit · Takelsa",
       sig_eyebrow: "Le cœur du domaine", sig_name: "El Bir", sig_gloss: "« le puits »",
+      sig_invite: "Nos vergers sont dans leur abondance, et votre visite nous honore. Soyez les bienvenus à Takelsa — la maison est la vôtre, la récolte sous vos yeux.",
       sig_body: "Notre plus ancien verger porte le nom d'une source. À l'ombre des cyprès, les poiriers y plongent leurs racines depuis des générations. C'est de cette eau que naît le fruit — et c'est ici qu'on vous accueille.",
       sig_vergers_label: "Cinq parcelles, cinq noms", vergers: ["El Bir", "El Maghrebi", "Mourali", "El Oued", "Kram"],
       ed_eyebrow: "Le fruit & la terre", ed_title: "La poire Williams, sur l'arbre.",
@@ -33,19 +34,20 @@
       map_label: "Bir Ezzit, Takelsa · Cap Bon", map_cta: "Itinéraire",
       footer_tag: "Poires Williams · Cap Bon · Tunisie",
       footer_note: "Vitrine d'invitation. Récolte été 2026. Contact direct, sans intermédiaire.",
-      footer_producer_l1: "TAKELSA — Bir Ezzit, Takelsa · Cap Bon, Tunisie", footer_producer_l2: "Contact : Ridha Dakhlaoui (responsable)",
+      footer_producer_l1: "Bir Ezzit, Takelsa · Cap Bon, Tunisie", footer_producer_l2: "Contact : Ridha Dakhlaoui (responsable)",
       footer_oil: "Du même domaine, à Bir Ezzit — notre huile d'olive ⵣ TAKELSA",
       hero_alt: "Poirier Williams chargé de fruits, verger TAKELSA à Bir Ezzit, Takelsa (Cap Bon)"
     },
     ar: {
       dir: "rtl",
-      nav: ["الضيعة", "البير", "الثمرة", "اتصال"], cta_contact: "تواصل معنا",
-      hero_eyebrow: "صيف 2026 · الوطن القبلي", hero_title_a: "أشجار إجاص", hero_title_b: "ويليامز", hero_title_c: "بالوطن القبلي.",
-      hero_lede: "سوانينا في خيرها، والزيارة تشرفنا. تفضلوا بحذانا في تاكلسة، الدار داركم والغلة على عينيكم.",
-      hero_cta1: "لنتحدّث عن المحصول", hero_cta2: "اكتشفوا الضيعة",
-      hero_meta: [{ l: "الصنف", v: "ويليامز" }, { l: "الأرض", v: "الوطن القبلي" }, { l: "الموسم", v: "صيف 2026" }],
+      nav: ["الضيعة", "البير", "الثمرة", "اتصال"], cta_contact: "اتصلوا",
+      hero_eyebrow: "الجَني صيف 2026 · الوطن القبلي", hero_title_a: "إجاص", hero_title_b: "ويليامز", hero_title_c: "من تاكلسة.",
+      hero_lede: "بساتين سليمة بالوطن القبلي. تفضّلوا، اطلبوا مباشرة من المنتج.",
+      hero_cta_call: "اطلبوا الآن", hero_call_eyebrow: "للطلب، اتصلوا مباشرة بالمسؤول",
+      hero_meta: [{ l: "الصنف", v: "ويليامز" }, { l: "الأرض", v: "الوطن القبلي" }, { l: "الجَني", v: "صيف 2026" }],
       hero_place: "بير الزيت · تاكلسة",
       sig_eyebrow: "قلب الضيعة", sig_name: "البير", sig_gloss: "« البئر »",
+      sig_invite: "سوانينا في خيرها، والزيارة تشرفنا. تفضلوا بحذانا في تاكلسة، الدار داركم والغلة على عينيكم.",
       sig_body: "أقدمُ بساتيننا يحمل اسم عين ماء. في ظلّ أشجار السرول، تغرس أشجار الإجاص جذورها منذ أجيال. من هذا الماء يولد الثمر — وهنا نستقبلكم.",
       sig_vergers_label: "خمس قطع، خمسة أسماء", vergers: ["البير", "المغربي", "المورالي", "الواد", "الكرم"],
       ed_eyebrow: "الثمرة والأرض", ed_title: "إجاص ويليامز، على الشجرة.",
@@ -57,7 +59,7 @@
       map_label: "بير الزيت، تاكلسة · الوطن القبلي", map_cta: "الاتجاهات",
       footer_tag: "إجاص ويليامز · الوطن القبلي · تونس",
       footer_note: "صفحة دعوة. محصول صيف 2026. تواصل مباشر دون وسيط.",
-      footer_producer_l1: "تاكلسة — بير الزيت، تاكلسة · الوطن القبلي، تونس", footer_producer_l2: "جهة الاتصال: رضا الدخلاوي (المسؤول)",
+      footer_producer_l1: "بير الزيت، تاكلسة · الوطن القبلي، تونس", footer_producer_l2: "جهة الاتصال: رضا الدخلاوي (المسؤول)",
       footer_oil: "من نفس الضيعة، ببير الزيت — زيت زيتوننا ⵣ تاكلسة",
       hero_alt: "أشجار إجاص ويليامز محمّلة بالثمار، بستان تاكلسة بالوطن القبلي"
     }
@@ -103,38 +105,44 @@
 
   function hero(t, lang) {
     var ar = lang === "ar";
-    // Trait rouge (swoosh) FR ET AR — parité (choix PO 2026-06-24, edit build local revertible).
-    // AR : offset un peu plus bas pour passer sous les jambages arabes sans manger les lettres.
+    // Trait rouge (swoosh) sous « Williams » — parité FR/AR (version locale, choix PO ; PAS le cadre saumon).
     var word = '<span style="color:var(--pear-700)">' + t.hero_title_b + '</span>' +
-        '<svg viewBox="0 0 240 14" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;inset-inline-start:0;bottom:' + "-.18em" + ';width:100%;height:.32em;overflow:visible"><path d="M2 9 C 60 3, 180 3, 238 8" fill="none" stroke="var(--clay-500)" stroke-width="3.5" stroke-linecap="round"/></svg>';
+        '<svg viewBox="0 0 240 14" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;inset-inline-start:0;bottom:-.18em;width:100%;height:.32em;overflow:visible"><path d="M2 9 C 60 3, 180 3, 238 8" fill="none" stroke="var(--clay-500)" stroke-width="3.5" stroke-linecap="round"/></svg>';
+    // 3 repères factuels, 0 chiffre — l'essentiel d'un coup d'œil
     var meta = t.hero_meta.map(function (m, i) {
-      return '<div style="display:flex;flex-direction:column;gap:.15rem;' + (i ? "padding-inline-start:clamp(1.2rem,2.5vw,2rem);border-inline-start:1px solid var(--border-default)" : "") + '">' +
-        '<dt style="font-family:var(--ui-font);font-size:.68rem;font-weight:600;letter-spacing:' + (ar ? "0" : ".12em") + ';text-transform:' + (ar ? "none" : "uppercase") + ';color:var(--text-muted)">' + m.l + '</dt>' +
-        '<dd style="margin:0;font-family:var(--display-font);font-size:1.35rem;color:var(--text-primary);line-height:1.1">' + m.v + '</dd></div>';
+      return '<div style="display:flex;flex-direction:column;gap:.1rem;' + (i ? "padding-inline-start:clamp(.9rem,2.2vw,1.6rem);border-inline-start:1px solid var(--border-default)" : "") + '">' +
+        '<dt style="font-family:var(--ui-font);font-size:.66rem;font-weight:600;letter-spacing:' + (ar ? "0" : ".1em") + ';text-transform:' + (ar ? "none" : "uppercase") + ';color:var(--text-muted)">' + m.l + '</dt>' +
+        '<dd style="margin:0;font-family:var(--display-font);font-size:1.2rem;color:var(--text-primary);line-height:1.1">' + m.v + '</dd></div>';
     }).join("");
-    var photo = '<div style="order:' + (ar ? 1 : 2) + ';position:relative">' +
-      '<div id="tks-heroframe" style="position:relative;border-radius:var(--radius-xl);padding:clamp(10px,1.5vw,18px);background:linear-gradient(150deg,var(--pear-600),var(--pear-800));box-shadow:var(--shadow-lg)">' +
+    // Action dominante : gros bouton APPEL téléphone, verbe direct + numéro isolé LTR (anti-bidi). Canal téléphone (tranche PO).
+    var num1 = '<span dir="ltr" style="font-variant-numeric:tabular-nums;white-space:nowrap">' + CONTACT.phone1_h + '</span>';
+    var callBtn = '<a href="tel:' + CONTACT.phone1 + '" class="tks-call" style="display:inline-flex;align-items:center;justify-content:center;gap:.65rem;background:var(--ink-900);color:var(--cream-50);font-family:var(--ui-font);font-weight:700;font-size:1.1rem;padding:.95rem 1.6rem;border-radius:var(--radius-pill);box-shadow:var(--shadow-md);text-decoration:none">' +
+      '<span style="display:inline-flex;color:var(--amber-300)">' + ICON.phone + '</span><span>' + t.hero_cta_call + '</span><span aria-hidden="true" style="opacity:.45">·</span>' + num1 + '</a>';
+    var phone2 = '<a href="tel:' + CONTACT.phone2 + '" dir="ltr" class="tks-call2" style="display:block;margin-top:.6rem;font-family:var(--ui-font);font-size:.9rem;font-weight:600;color:var(--text-secondary);text-decoration:none;white-space:nowrap;' + (ar ? "text-align:right" : "") + '">' + CONTACT.phone2_h + '</a>';
+    var callEyebrow = '<div style="font-family:var(--ui-font);font-size:.78rem;color:var(--text-muted);margin-bottom:.7rem">' + t.hero_call_eyebrow + '</div>';
+    var photo = '<div style="order:2;position:relative">' +
+      '<div id="tks-heroframe" style="position:relative;border-radius:var(--radius-xl);padding:clamp(8px,1.2vw,14px);background:linear-gradient(150deg,var(--pear-600),var(--pear-800));box-shadow:var(--shadow-lg)">' +
         '<div class="rv tks-hero-photo" data-rv="mask" data-delay="160" style="border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;position:relative">' +
-          pic("hero-tree-graded", 760, 1400, "(max-width:880px) 92vw, 44vw", "tks-kenburns", t.hero_alt, "width:100%;height:100%;object-fit:cover;object-position:center 42%;display:block") +
-          '<span style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(28,38,22,.30))"></span>' +
+          pic("cluster-graded", 760, 1400, "(max-width:880px) 92vw, 44vw", "tks-kenburns", t.hero_alt, "width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block") +
+          '<span style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(28,38,22,.34))"></span>' +
+          '<span style="position:absolute;inset-inline:0;bottom:0;padding:.65rem .9rem;font-family:var(--ui-font);font-size:.72rem;color:var(--cream-100);display:inline-flex;align-items:center;gap:.4rem">' + ICON.clock + t.ed_note + '</span>' +
         '</div>' +
       '</div>' +
-      '<div class="rv" data-rv="up" data-delay="520" style="position:absolute;inset-inline-end:6%;bottom:5%;background:color-mix(in srgb,var(--cream-50) 93%,transparent);backdrop-filter:blur(6px);border-radius:var(--radius-pill);padding:.5rem .95rem;box-shadow:var(--shadow-sm);font-family:var(--ui-font);font-size:.78rem;font-weight:600;color:var(--ink-900);display:inline-flex;align-items:center;gap:.45rem"><span class="tks-yaz" style="font-size:.95rem;color:var(--accent)">ⵣ</span>' + t.hero_place + '</div>' +
+      '<div class="rv" data-rv="up" data-delay="520" style="position:absolute;inset-inline-end:6%;top:5%;background:color-mix(in srgb,var(--cream-50) 93%,transparent);backdrop-filter:blur(6px);border-radius:var(--radius-pill);padding:.45rem .9rem;box-shadow:var(--shadow-sm);font-family:var(--ui-font);font-size:.76rem;font-weight:600;color:var(--ink-900);display:inline-flex;align-items:center;gap:.4rem"><span class="tks-yaz" style="font-size:.9rem;color:var(--accent)">ⵣ</span>' + t.hero_place + '</div>' +
     '</div>';
-    var text = '<div style="order:' + (ar ? 2 : 1) + '">' +
-      '<div class="rv tks-eyebrow" data-rv="up" style="display:inline-flex;align-items:center;gap:.55rem"><span style="width:26px;height:1.5px;background:var(--accent);display:inline-block"></span>' + t.hero_eyebrow + '</div>' +
-      '<h1 style="margin:1.1rem 0 0;font-family:var(--display-font);font-weight:400;font-size:clamp(2.9rem,6.6vw,6rem);line-height:' + (ar ? "1.32" : ".98") + ';letter-spacing:' + (ar ? "0" : "-.015em") + ';color:var(--ink-900)">' +
-        '<span class="rv" data-rv="blur" style="display:block">' + t.hero_title_a + '</span>' +
-        '<span class="rv" data-rv="blur" data-delay="110" style="display:block;position:relative;width:fit-content">' + word + '</span>' +
-        '<span class="rv" data-rv="blur" data-delay="210" style="display:block">' + t.hero_title_c + '</span>' +
+    var text = '<div style="order:1">' +
+      '<div class="rv tks-eyebrow" data-rv="up" style="display:inline-flex;align-items:center;gap:.5rem"><span style="width:24px;height:1.5px;background:var(--accent);display:inline-block"></span>' + t.hero_eyebrow + '</div>' +
+      '<h1 style="margin:.9rem 0 0;font-family:var(--display-font);font-weight:400;font-size:clamp(2.5rem,5.6vw,4.6rem);line-height:' + (ar ? "1.25" : "1.02") + ';letter-spacing:' + (ar ? "0" : "-.015em") + ';color:var(--ink-900)">' +
+        '<span class="rv" data-rv="blur" style="display:block;position:relative;width:fit-content">' + t.hero_title_a + ' ' + word + '</span>' +
+        '<span class="rv" data-rv="blur" data-delay="110" style="display:block">' + t.hero_title_c + '</span>' +
       '</h1>' +
-      '<p class="rv" data-rv="up" data-delay="300" style="margin:1.6rem 0 0;font-family:var(--font-editorial);font-size:clamp(1.15rem,1.7vw,1.45rem);line-height:1.6;color:var(--text-secondary);max-width:32ch">' + t.hero_lede + '</p>' +
-      '<div class="rv tks-hero-cta" data-rv="up" data-delay="380" style="display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem">' + ctaFb(CONTACT.facebook, t.hero_cta1, true) + '<a href="#bir" class="tks-ghost-dark">' + t.hero_cta2 + '</a></div>' +
-      '<dl class="rv" data-rv="up" data-delay="460" style="display:flex;flex-wrap:wrap;gap:0 clamp(1.2rem,2.5vw,2rem);margin:2.4rem 0 0">' + meta + '</dl>' +
+      '<p class="rv tks-hero-lede" data-rv="up" data-delay="240" style="margin:1.1rem 0 0;font-family:var(--font-editorial);font-size:clamp(1.05rem,1.5vw,1.25rem);line-height:1.55;color:var(--text-secondary);max-width:38ch">' + t.hero_lede + '</p>' +
+      '<dl class="rv" data-rv="up" data-delay="320" style="display:flex;flex-wrap:wrap;gap:.4rem clamp(.9rem,2.2vw,1.6rem);margin:1.4rem 0 0">' + meta + '</dl>' +
+      '<div class="rv" data-rv="up" data-delay="400" style="margin-top:1.7rem">' + callEyebrow + callBtn + phone2 + '</div>' +
     '</div>';
     return '<section id="top" style="position:relative;overflow:hidden">' +
-      '<span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 60% at 50% 28%, rgba(229,165,44,.15), transparent 72%)"></span>' +
-      '<div class="tks-hero-grid" style="position:relative;max-width:1320px;margin:0 auto;padding:clamp(2rem,5vw,4.5rem) clamp(1.25rem,4vw,4rem) clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;min-height:min(86vh,760px)">' + text + photo + '</div>' +
+      '<span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 60% at 50% 24%, rgba(229,165,44,.13), transparent 72%)"></span>' +
+      '<div class="tks-hero-grid" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(1.6rem,4vw,3.2rem) clamp(1.25rem,4vw,4rem) clamp(2rem,4vw,3.2rem);display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(1.5rem,4vw,3rem);align-items:center">' + text + photo + '</div>' +
       '<div aria-hidden="true" class="tks-zig-band"></div>' +
     '</section>';
   }
@@ -178,7 +186,8 @@
     var txt = '<div style="order:' + (ar ? 1 : 2) + '">' +
       '<div class="rv tks-eyebrow" data-rv="up" style="color:var(--amber-300)">' + t.sig_eyebrow + '</div>' +
       '<h2 class="rv" data-rv="up" data-delay="80" style="font-family:var(--display-font);color:var(--cream-50);font-weight:400;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.02;margin:.7rem 0 0">' + t.sig_name + ' <span style="color:var(--amber-300);font-style:italic;font-family:var(--font-editorial);font-size:.7em">' + t.sig_gloss + '</span></h2>' +
-      '<p class="rv" data-rv="up" data-delay="160" style="font-family:var(--font-editorial);font-size:clamp(1.15rem,1.7vw,1.4rem);line-height:1.72;color:rgba(247,242,232,.86);margin:1.4rem 0 0;max-width:46ch">' + t.sig_body + '</p>' +
+      '<p class="rv" data-rv="up" data-delay="130" style="font-family:var(--font-editorial);font-style:italic;font-size:clamp(1.1rem,1.6vw,1.35rem);line-height:1.65;color:var(--amber-300);margin:1.1rem 0 0;max-width:46ch">' + t.sig_invite + '</p>' +
+      '<p class="rv" data-rv="up" data-delay="180" style="font-family:var(--font-editorial);font-size:clamp(1.1rem,1.6vw,1.35rem);line-height:1.7;color:rgba(247,242,232,.86);margin:1.1rem 0 0;max-width:46ch">' + t.sig_body + '</p>' +
       '<div class="rv" data-rv="up" data-delay="260" style="margin-top:2.2rem;padding-top:1.5rem;border-top:1px solid rgba(229,165,44,.28)">' +
         '<div style="font-family:var(--ui-font);font-size:.72rem;font-weight:600;letter-spacing:' + (ar ? "0" : ".14em") + ';text-transform:' + (ar ? "none" : "uppercase") + ';color:var(--amber-300);margin-bottom:.9rem">' + t.sig_vergers_label + '</div>' +
         '<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem">' + names + '</div>' +
@@ -187,7 +196,7 @@
       pic("orchard-pano-dark", 840, 1536, "100vw", "", "", "position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32;mix-blend-mode:luminosity", true) +
       '<span aria-hidden="true" class="tks-amazigh" style="position:absolute;inset:0;opacity:.06"></span>' +
       '<div aria-hidden="true" class="tks-zig-band" style="position:absolute;top:0;left:0;right:0"></div>' +
-      '<div class="tks-sig-grid" style="position:relative;max-width:1080px;margin:0 auto;padding:clamp(4rem,9vw,7.5rem) clamp(1.25rem,4vw,4rem);display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:clamp(2rem,5vw,4.5rem);align-items:center">' + seal(t, lang) + txt + '</div>' +
+      '<div class="tks-sig-grid" style="position:relative;max-width:1080px;margin:0 auto;padding:clamp(2.8rem,6vw,5rem) clamp(1.25rem,4vw,4rem);display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:center">' + seal(t, lang) + txt + '</div>' +
       '<div aria-hidden="true" class="tks-zig-band" style="position:absolute;bottom:0;left:0;right:0;transform:rotate(180deg)"></div>' +
     '</section>';
   }
@@ -207,7 +216,7 @@
         '<span style="font-family:var(--ui-font);font-size:.85rem;color:var(--text-muted)">' + t.ed_caption + '</span>' +
       '</div></div>';
     return '<section id="fruit" class="tks-grain" style="background:var(--cream-50);border-top:1px solid var(--border-default);position:relative">' +
-      '<div class="tks-ed-grid" style="max-width:1320px;margin:0 auto;padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,4rem);display:grid;grid-template-columns:1fr 1.04fr;gap:clamp(2rem,5vw,5rem);align-items:center">' + collage + text + '</div>' +
+      '<div class="tks-ed-grid" style="max-width:1320px;margin:0 auto;padding:clamp(2.8rem,6vw,4.8rem) clamp(1.25rem,4vw,4rem);display:grid;grid-template-columns:1fr 1.04fr;gap:clamp(2rem,5vw,5rem);align-items:center">' + collage + text + '</div>' +
     '</section>';
   }
 
@@ -270,7 +279,7 @@
       channel("fb", t.c_fb, t.c_fb_sub, CONTACT.facebook, true, false, lang) +
       channel("phone", t.c_phone, CONTACT.phone1_h + " · " + CONTACT.phone2_h, "tel:" + CONTACT.phone1, false, false, lang) +
       channel("wa", t.c_wa, t.c_wa_sub, CONTACT.whatsapp, false, true, lang) + '</div>';
-    return '<section id="contact" style="background:var(--bg-page)"><div style="max-width:1320px;margin:0 auto;padding:clamp(3.5rem,7vw,6rem) clamp(1.25rem,4vw,4rem)"><div class="tks-contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start">' + left + right + '</div></div></section>';
+    return '<section id="contact" style="background:var(--bg-page)"><div style="max-width:1320px;margin:0 auto;padding:clamp(2.5rem,5vw,4.2rem) clamp(1.25rem,4vw,4rem)"><div class="tks-contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start">' + left + right + '</div></div></section>';
   }
 
   function footer(t, lang) {
